@@ -1,22 +1,23 @@
 <!DOCTYPE html>
 <html lang="en">
-    <head>
-        <meta charset="utf-8">
-        <title>Lab 6-2</title>
-    </head>
-	
-	<body>
-	  <h2>CIW JavaScript Specialist</h2>
-	  <hr>
 
-	  <button type="button" id="openWindowBtn">Open New Window</button>
+<head>
+	<meta charset="utf-8">
+	<title>Lab 6-2</title>
+</head>
 
-	  <script>
+<body>
+	<h2>CIW JavaScript Specialist</h2>
+	<hr>
+
+	<button type="button" id="openWindowBtn">Open New Window</button>
+
+	<script>
 		document.addEventListener('DOMContentLoaded', () => {
-		  const openWindowBtn = document.getElementById('openWindowBtn');
+			const openWindowBtn = document.getElementById('openWindowBtn');
 
-		  openWindowBtn.addEventListener('click', () => {
-			const popup = 
+			openWindowBtn.addEventListener('click', () => {
+				const popup = 
 
 		
 			}
@@ -38,9 +39,10 @@
 			closeBtn.addEventListener('click', () => popup.close());
 
 			popup.document.body.appendChild(closeBtn);
-		  });
 		});
-	  </script>
+		});
+	</script>
 
-	</body>
+</body>
+
 </html>
