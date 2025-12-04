@@ -18,7 +18,10 @@
 		<p>Click a topic below to learn more and reflect:</p>
 
 		<button id="ethicsBtn">Ethical Behavior for Web Professionals</button>
-
+		<button id="privacyBtn">Ethical Behavior for privacy and trust</button>
+		<button id="userdataBtn">Ethical Behavior for fair use of user data</button>
+		<button id="violationsBtn">Ethical Behavior for laws against privacy violations</button>
+		<button id="rightsBtn">Ethical Behavior for intellectual property rights</button>
 
 
 		<div id="output"></div>
@@ -27,17 +30,32 @@
 		  const output = document.getElementById('output');
 
 		  const topics = {
-			ethics: "Insert your definition here.",
-			privacy: "Insert your definition here.",
-			fairUse: "Insert your definition here.",
-			laws: "Insert your definition here.",
-			intellectual: "Insert your definition here."
+			ethics: "nuh-uh",
+			privacy: "trust is NOT important, give your data to microsoft",
+			fairUse: "no",
+			laws: "something I dont follow",
+			intellectual: "my kind doesnt have this"
 		  };
 
 		  document.getElementById('ethicsBtn').addEventListener('click', () => {
 			output.innerHTML = `<h3>Ethical Behavior</h3><p>${topics.ethics}</p>`;
 		  });
 
+		  document.getElementById('privacyBtn').addEventListener('click', () => {
+			output.innerHTML = `<h3>Privacy and Trust</h3><p>${topics.privacy}</p>`;
+		  })
+
+		  document.getElementById('userdataBtn').addEventListener('click', () => {
+			output.innerHTML = `<h3>Fair Use and User Data</h3><p>${topics.fairUse}</p>`;
+		  })
+
+		  document.getElementById('violationsBtn').addEventListener('click', () => {
+			output.innerHTML = `<h3>Laws and Privacy Violations</h3><p>${topics.laws}</p>`;
+		  })
+
+		  document.getElementById('rightsBtn').addEventListener('click', () => {
+			output.innerHTML = `<h3>Property and Rights</h3><p>${topics.intellectual}</p>`;
+		  })
 
 		</script>
 
